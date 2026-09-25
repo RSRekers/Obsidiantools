@@ -146,14 +146,8 @@ for (const item of items) {
     // 3. Create the literature note
     const content = `---
 title: "${title.replace(/"/g, '\\"')}"
-authors:
-${authorsList}
-doi: ${doi}
 tags: 
-rating: 
 ---
-
-# ${title}
 
 ${pdfFileLink ? `## PDF Attachment\n${pdfFileLink}` : ""}
 ${extractedAnnotations}
